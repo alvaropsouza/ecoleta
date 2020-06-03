@@ -77,14 +77,14 @@ form select {
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
-    /*Retira a bordinha que fica ao selecinar a input*/
+    /*Remove border while selecting input (weird black border)*/
     outline: none;
 
     border-radius: 8px;
 }
 
 form select {
-    /**/
+    /*Remove appearance bugs on Mozilla and Chrome*/
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -95,6 +95,29 @@ form label {
     margin-bottom: 8px;
 }
 
+/*Select an element that have 2 fields in a row and edit the last one*/
 form .field-group .field + .field {
     margin-left: 24px;
 }
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 30px;
+
+    transition: background-color 400ms;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
+
