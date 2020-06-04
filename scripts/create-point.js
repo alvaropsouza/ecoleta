@@ -53,10 +53,36 @@ for(const item of itemsToColect) {
     item.addEventListener("click", handleSelectedItem)
 }
 
+const collectedItems = document.querySelector("input[name=items]")
+
+let selectedItems = []
+
 function handleSelectedItem(event) {
     const itemLi = event.target
     // Add or remove a class with javascript '.toggle' do both(.add only add, .remove only remove)
     itemLi.classList.toggle("selected")
     const itemId = itemLi.dataset.id
+
+    // Verify if there's any item selected, (y)Grab the selected items
+        const alreadySelected = selectedItems.findIndex( (item) =>  {
+        const itemFound = item == itemId // Return true or false cause of double equals '=='(compares)
+        return itemFound      
+    } );
+    
+    // If this item is selected, remove from selection('selectItems')
+    if(alreadySelected >= 0/*index position*/) {
+        // Remove selection
+        const filteredItems = selectedItems.filter( item => {
+            const itemIsDifferent = item != itemId
+            return itemIsDifferent   
+        })
+        selectedItems = filteredItems
+    } else {
+        // If not selected, add to selection
+        selectedItems.push(itemId)
+    } 
+
+    // Update hidden input with selected items 
+    collectedItems.value = selectedItems
 
 }
