@@ -86,3 +86,5 @@ function handleSelectedItem(event) {
     collectedItems.value = selectedItems
 
 }
+
+
