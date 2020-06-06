@@ -73,7 +73,6 @@ this css will run*/
 #modal form input {
     flex: 1;
 
-
     background-color: #f0f0f5;
 
     border-radius: 8px 0 0 8px;
@@ -96,4 +95,16 @@ this css will run*/
 
 #modal form button:hover {
     background-color: #2fb85e;
+}
+
+/* This is for the point created modal*/
+#modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1 {
+    color: white;
+    margin-top: 32px;
 }
