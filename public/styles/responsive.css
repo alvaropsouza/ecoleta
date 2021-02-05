@@ -8,13 +8,9 @@
         text-align: center;
     }
 
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    /* #page-home header a {
+ 
+    } */
 
     #page-home main {
         align-items: center;
