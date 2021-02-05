@@ -10,18 +10,29 @@
 
 ## Imagens
 
-![Happy HomePage](./public/images/happyhome.png)
-![Happy Mapa](./public/images/happymap.png)
-![Happy Mapa](./public/images/happyadd.png)
+![Ecoleta HomePage](./public/assets/ecoleta-home.png)
+![Ecoleta cadastro de ponto](./public/assets/cadastro-ecoleta.png)
+![Ecoleta cadastro de ponto 2](./public/assets/cadastro-ecoleta2.png)
+![Ecoleta modal](./public/assets/modal-ecoleta.png)
 
 
 ## Instalação
 
 Clone esse repositório na sua pasta local
 
-`git clone https://github.com/alvaropsouza/nextLevelWeek03.git`
+`git clone https://github.com/alvaropsouza/nextLevelWeek01.git`
 
-Instale as dependências utilizadas no projeto
+Recomendamos usar a versão 10.x do node js para maior compatibilidade com o projeto, para isso você pode usar o node version manager para alternar para a versão desejada.
+
+<i>Nvm para windows OS</i>
+
+https://github.com/coreybutler/nvm-windows
+
+<i>Nvm para linux OS</i>
+
+https://github.com/nvm-sh/nvm
+
+<b>Instale as dependências utilizadas no projeto</b>
 
 `npm install`
 
@@ -31,10 +42,10 @@ Inicie o servidor
 
 Agora basta abrir no seu navegador uma aba com o seguinte endereço:
 
-`http://localhost:5500/` (<i>Endereço que consta no server.js</i>)
+`http://localhost:3000/` (<i>Endereço que consta no server.js</i>)
 ## Sobre/Uso
 
-O projeto Happy foi criado com o intuito de fazer um catálogo de orfanatos próximos de você, para que possa então ser feito o agendamento de visitas às crianças.
+O projeto Ecoleta foi criado com o intuito de identificar pontos de coleta nas próximidades do usuário e ajudar no combate ao descarte inadequado de resíduos.
 
 ## Contributing
 
